@@ -42,4 +42,591 @@
      CODE:
 
          a=input()
-         print(ord(a))      
+         print(ord(a))  
+    *sum and difference
+    CODE:
+    
+     a=int(input())
+     b=int(input())
+     c=a+b
+     d=a-b
+     print(c)
+     print(d)
+   * product and division
+   CODE:
+   
+       a=int(input())
+       b=int(input())
+       print(a*b)
+       print(a/b)
+       print(a%b)
+       
+    * swapping of two numbers
+     CODE:
+     
+     a=int(input())
+     b=int(input())
+     a,b=b,a
+     print(a,b)
+     
+    * swapping without third variable
+     CODE:
+     
+     a=int(input())
+     b=int(input())
+     a=a*b
+     b=a//b
+     a=a//b
+     print(a,b)
+     
+     * average calculations
+     CODE:
+     
+     a=float(input())
+     b=float(input())
+     c=float(input())
+     d=float(input())
+     e=float(input())
+     f=((a+b+c+d+e)/5)
+     print('%.2f' %f)
+     
+     *alice in wonderland
+     CODE:
+     
+     a=int(input())
+     b=a//10
+     c=a%10
+     print(b+c)
+     
+     * area calculations
+     CODE:
+     
+     a=int(input())
+     b=int(input())
+     c=int(input())
+     r=float(input())
+     print(a*a)
+     print(b*c)
+     pi=3.14
+     print( "%.2f" %(pi*r*r))
+     
+     * fencing the ground
+     CODE:
+     
+     l=int(input())
+     b=int(input())
+     c=2*(l+b)
+     d=l*b
+     print('required length is',c,'m')
+     print('required quantity of carpet is',d,'sqm')
+     
+     *power of a number
+      CODE:
+      
+      x=int(input())
+      n=int(input())
+      print(pow(x,n))
+      
+     *simple interest
+     
+     CODE:
+     
+     p=int(input())
+     t=int(input())
+     r=float(input())
+     i=((p*t*r)/100)
+     print(i)
+     
+     *splitting into teams
+     
+     CODE:
+     
+     a=int(input())
+     b=int(input())
+     print(f'the number of students in each team is {a//b} and left out is {a%b}')
+     
+     * Three idiots
+     
+     CODE:
+     
+     x1=int(input())
+     y1=int(input())
+     x2=int(input())
+     y2=int(input())
+     print(f"Binoy's house is located at {(x1+x2)/2,(y1+y2)/2}" )
+     
+     *greatest of two numbers
+     
+     CODE:
+     
+     a=int(input())
+     b=int(input())
+     if a==b:
+        print(f'{a} is equal to {b}')
+     elif a>=b:
+        print(f'{a} is greater than {b}')
+     else :
+        print(f'{a} is less than {b}')
+        
+      *vowels or consonants
+      
+      CODE:
+      
+      a=input()
+      vowel="aeiouAEIOU"
+      if a>='a'and a<='z' or a>='A' and a<='Z':
+          if a in vowel:
+              print("vowel")
+          else:
+              print("consonant")
+      else:
+          print("not an alphabet")
+          
+          
+       * grading system
+       
+       CODE:
+       
+        a=int(input())
+        if a==100:
+            print("s")
+        elif a<100 and a>=90:
+            print("A")
+        elif a<90 and a>=80:
+            p      rint("B")
+        elif a<80 and a>=70:
+            print("C")
+        elif a<70 and a>=60:
+            print("D")
+        elif a<60 and a>=50:
+            print("E")
+        elif a<50:
+            print("F")
+        else:
+            print("invalid input")
+            
+      *profit or loss
+      
+      CODE:
+      
+      cp=float(input("Enter the price of a dozen mangoes\n"))
+      mango=float(input("Enter the price at which 1 mango is being sold\n"))
+      sp=12*mango
+      if sp>cp:
+          p=str(int(sp-cp))+".00"
+          print(f"Profit:Rs.{p}")
+      elif sp<cp:
+          l=str(int(cp-sp))+".00"
+          print(f"Loss:Rs.{l}")
+      else:
+          print("no profit nor loss")
+          
+      *fee collection
+      
+      CODE:
+      
+      print("Enter the student type")
+X=str(input())
+if(X=="MSDS"):
+    TF=float(input('Enter tuition fee\n'))
+    BF=float(input('Enter bus fee\n'))
+    print("The fees to be paid by the student is Rs.","%.2f" %(TF+BF))
+elif(X=="MSH"):
+    TF=float(input("Enter tuition fee\n"))
+    HF=float(input("Enter hostel fee\n"))
+    print("The fees to be paid by the student is Rs.","%.2f" %(TF+HF))
+elif(X=="MGSDS"):
+    TF=float(input("Enter tuition fee\n"))
+    BF=float(input("Enter bus fee\n"))  
+    print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+BF))
+elif(X=="MGSH"):    
+    TF=float(input("Enter tuition fee\n"))
+    HF=float(input("Enter hostel fee\n"))
+    print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+HF))
+    
+  *y2k problem detector
+  
+  CODE:
+  
+  
+    a=int(input("Enter Year of Birth\n"))
+    b=int(input("Enter Current year\n"))
+    if a<b:
+        print(f'Your age is {b-a}')
+    elif a>b:
+        print(f'Your age is {100-a+b}') 
+        
+   * lab allocation
+    
+    CODE:
+    
+  L1=int(input("Enter x\n"))
+  L2=int(input("Enter y\n"))
+  L3=int(input("Enter z\n"))
+  if L1<L2 and L1<L3:
+      print("L1 has the minimal seating capacity")
+  elif L2<L1 and L2<L3:
+      print("L2 has the minimal seating capacity")
+  else:
+      print("L3 has the minimal seating capacity")
+      
+   * gardening
+   
+   CODE:
+   
+   r=int(input())
+   c=int(input())
+   n=int(input())
+   if (n%c==0 or n%c==1 or n>=1 and n<=c):
+       print("Yes")
+   else:
+       print("No")
+       
+    * hotel tariff calculator
+    
+    CODE:
+    
+    n=int(input())
+    r=float(input())
+    d=int(input())
+    if n>=4 and n<=6 or n>=11 and n<=12:
+        t="%.2f" %((1.2*r)*d)
+        print(f"Hotel Tariff:Rs.{t}")
+    elif n<=12:
+        t="%.2f" %(r*d)
+        print(f"Hotel Tariff:Rs.{t}")
+    else:
+        print("invalid input")
+        
+     * RGY Lights
+      
+     CODE:
+     
+     s=float(input())
+     d=float(input())
+     t=float(input())
+     if (t<=s*d):
+         print("yes")
+     else:
+         print("no")
+         
+     * Budgets
+     
+     CODE:
+     
+     A=int(input())
+     B=int(input())
+     C=int(input())
+     D=int(input())
+     E=int(input())
+     X=A*350.34+B*230.90+C*190.55+D*125.30+E*180.90
+     if (X<=15000):
+         print("yes")
+     else:
+         print("no")
+         
+     * sece dining
+     
+     CODE:
+     
+     x=str(input())
+     y=int(input())
+     if(x=='front' and y==1):
+         print('Left Handed')
+     elif(x=='rear' and y==2):
+         print('Left Handed')
+     elif(x=='front' and y==2):
+         print('Right Handed')
+     elif(x=='rear' and y==1):
+         print('Right Handed')
+         
+     * Intersection of circle
+     
+     CODE:
+     
+     x1=int(input())
+     y1=int(input())
+     r1=int(input())
+     x2=int(input())
+     y2=int(input())
+     r2=int(input())
+     d=((((x1-x2)**2)+((y1-y2)**2))**(1/2))
+     if(r1+r2)==d:
+         print('The circles are tangential')
+     elif(r1+r2)>d:
+         print('The circles overlap')
+     else:
+         ('The circles do not overlap')
+         
+     * Microwave oven
+     
+     CODE:
+     
+     n=int(input("Enter the number of items \n"))
+     t=float(input("Enter the single item heating time \n"))
+     if (n==1):
+         print("The recommended heating time is","%.2f" %t)
+     elif(n==2):
+         print("The recommended heating time is","%.2f" %(1.5*t))
+     elif(n==3):
+         print("The recommended heating time is","%.2f" %(2*t))
+     else:
+         print("number of items is more")
+         
+         
+     *Ameoba multiplication
+     
+     CODE:
+     
+     i=int(input("Enter the number of months \n"))
+     a=0
+     b=1
+     count=2
+     while count<i:
+         c=a+b
+         a=b
+         b=c
+         count=count+1
+     print("The amoeba size is",c)
+     
+     
+    * sum of digits
+    
+    CODE:
+    
+      n=int(input())
+      sum=0
+      while(n>0):
+          rem=n%10
+          sum=sum+rem
+          n=n//10
+      print(sum)
+      
+     * Friendly pair
+     
+     CODE:
+     
+     x=int(input())
+     y=int(input())
+     sum1=0
+     sum2=0
+     for i in range(1,x):
+         if(x%i==0):
+           sum1+=i
+           print(sum1)
+     for j in range(1,y):
+         i     f(y%j==0):
+           sum2+=j
+           print(sum2)
+     if(sum1/x)==(sum2/y):
+         print("Friendly pair")
+     else: 
+         print("Not Friendly pair")
+         
+     * Harshard number
+     
+     CODE:
+     
+     n=int(input())
+     sum=0
+     while(n>0):
+        b=n%10
+        sum=sum+b
+        n=n//10
+     if(n%sum!=0):
+        print("Harshad Number")
+     else:
+        print("Not Harshad Number")
+        
+     *LCM of two numbers
+     
+     CODE:
+     
+     n1=int(input())
+     n2=int(input())
+     sum=1
+     if(n1>n2):
+         x=n1
+     else:
+         x=n2
+     while x!=0:
+         if x%n1==0 and x%n2==0:
+             print("lcm of",n1,"and",n2,"is",x)
+             break
+         x=x+1
+            
+     *Palindrome of a number
+     
+     CODE:
+     
+     a=int(input())
+     sum==0
+     rev=0
+     while(a>0):
+        b=a%10
+        rev=rev*10+b
+        a=a//10
+        print(rev)
+        print(a)
+     if sum==rev:
+         print("it is a palindrome")
+     else:
+         print("it is not a palindrome")
+         
+      *Perfect number
+      
+      CODE:
+      
+      a=int(input())
+      sum=0
+      for i in range(1,a):
+          if (a%i)==0:
+              sum+=i
+              print(sum)
+      if (sum)==a:
+              print("perfect number")
+      else:
+              print("not a perfect number")
+              
+      *Prime number
+      
+      CODE:
+      
+      num=int(input())
+      if num>1:      
+          for i in range (2,int(num/2)+1):
+              if(num%i)==0:
+                print(num," not a prime ")
+                break
+          else:
+              print(num, "is a prime number")
+      else:
+          print(num,"is not a prime number")
+          
+       *Prime numbers in a range
+       
+       CODE:
+       
+       a=int(input())
+       b=int(input())
+       for i in range(a,b+1):
+           if i>1:
+               for j in range(2,i):
+                    if((i%j)==0):
+                      break
+               else:
+                   print(i)
+                   
+       *Reverse of a number
+       
+       CODE:
+       
+       a=int(input())
+       rev=0
+       while(a>0):
+           b=a%10
+           rev=rev*10+b
+           a=a//10
+       print(rev)
+       
+      *Strong number 
+      
+      CODE:
+      
+     n=int(input())
+     sum=0
+     temp=n
+     while(n):
+         i=1
+         fact=1
+         rem=n%10
+         while(i<=rem):
+             fact=fact+i
+             i=i+1
+         sum=sum+fact
+         n=n//10
+     if(sum==temp):
+         print("Strong Number")
+     else:
+         print("Not a Strong Number")
+         
+         
+     * Sum of natural numbers
+     
+     CODE:
+     
+    n=int(input())
+    sum=0
+    while(n>0):
+        sum=sum+n
+        n=n-1
+    print(sum)
+    
+    *Sum of numbers in range
+    
+    CODE:
+    
+    x=int(input())
+    y=int(input())
+    sum=0
+    for i in range(x,y+1):
+        sum=sum+i
+    print(sum)
+    
+  * Series 1
+  
+  CODE:
+  
+  n=int(input())
+  for i in range(1,n+1):
+      print(i**2)  
+      
+      
+  *series 2
+  
+  CODE:
+  
+  n=int(input())
+  a=6
+  print(a)
+  for i in range (1,n):
+      a=a+i*5
+      print(a)
+      
+      
+   *Series 3
+   
+   CODE:
+   
+   n=int(input())
+   for i in range(1,n+1):
+        print(3**i)
+
+
+
+      
+     
+     
+         
+         
+           
+
+
+    
+
+
+     
+     
+
+
+
+
+
+
+     
+     
+
+       
+    
+
+  
