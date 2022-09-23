@@ -42,7 +42,8 @@
      CODE:
 
          a=input()
-         print(ord(a))  
+         print(ord(a)) 
+         
     *sum and difference
     CODE:
     
@@ -52,6 +53,7 @@
      d=a-b
      print(c)
      print(d)
+     
    * product and division
    CODE:
    
@@ -225,24 +227,24 @@
       
       CODE:
       
-      print("Enter the student type")
-X=str(input())
-if(X=="MSDS"):
-    TF=float(input('Enter tuition fee\n'))
-    BF=float(input('Enter bus fee\n'))
-    print("The fees to be paid by the student is Rs.","%.2f" %(TF+BF))
-elif(X=="MSH"):
-    TF=float(input("Enter tuition fee\n"))
-    HF=float(input("Enter hostel fee\n"))
-    print("The fees to be paid by the student is Rs.","%.2f" %(TF+HF))
-elif(X=="MGSDS"):
-    TF=float(input("Enter tuition fee\n"))
-    BF=float(input("Enter bus fee\n"))  
-    print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+BF))
-elif(X=="MGSH"):    
-    TF=float(input("Enter tuition fee\n"))
-    HF=float(input("Enter hostel fee\n"))
-    print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+HF))
+         X=str(input())
+         print("Enter the student type")
+         if(X=="MSDS"):
+             TF=float(input('Enter tuition fee\n'))
+             BF=float(input('Enter bus fee\n'))
+             print("The fees to be paid by the student is Rs.","%.2f" %(TF+BF))
+         elif(X=="MSH"):
+             TF=float(input("Enter tuition fee\n"))
+             HF=float(input("Enter hostel fee\n"))
+             print("The fees to be paid by the student is Rs.","%.2f" %(TF+HF))
+         elif(X=="MGSDS"):
+             TF=float(input("Enter tuition fee\n"))
+             BF=float(input("Enter bus fee\n"))  
+             print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+BF))
+         elif(X=="MGSH"):    
+             TF=float(input("Enter tuition fee\n"))
+             HF=float(input("Enter hostel fee\n"))
+             print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+HF))
     
   *y2k problem detector
   
@@ -601,9 +603,164 @@ elif(X=="MGSH"):
    n=int(input())
    for i in range(1,n+1):
         print(3**i)
+        
+   *Series 4
+   
+   CODE:
+   
+   n=int(input())   
+   a=0.5
+   print(a)
+   for i in range (0,n+1):
+       a=a+3**i
+       print(a)
+       
+  * series 5
+  
+  CODE:
+  
+  n=int(input())
+  x=7
+  for i in range(0,n):
+      x=x+4
+      print(x**2)
+      
+      
+  *Series 6
+  
+  CODE:
+  
+  n=int(input())
+  for i in range(1,n+1):
+      if (i%2==0):
+            print((i**2)-2)
+      else:
+          print((i**2)-1)
+          
+          
+   *Series 7
+   
+   CODE:
+   
+   n=int(input())
+   a=1
+   b=4/2
+   print(a)
+   print(b)
+   for i in range(1,n-1):
+       if(i%2==0):
+           b=b*3.0
+           print(b)
+       else:
+           a=a*3.0
+           print(a)
+           
+           
+       *Series 8
+       
+       CODE:
+       
+       n=int(input())
+       a=4
+       print(a)
+       for i in range(1,n):
+           a=(a+(i**2))
+           print(a)
+           
+           
+       *Series 9
+       
+       CODE:
+       
+       n=int(input())
+       a=2
+       print(a)
+       for i in range(2,n+1):
+           a=(a**2)-1
+           print(a)
+           
+           
+        *Series 10
+        
+        CODE:
+        
+        n=int(input())
+        x=95.0
+        a=20.5
+        print(x)
+        print(x+a)
+        x=x+a
+        for i in range(1,n-1):
+            x=(x+(a+2*i))
+            print(x)
+            
+            
+       *Arthematic operators
+       
+       CODE:
+       
+       a=int(input())
+       b=int(input())
+       print(a+b)
+       print(a-b)
+       print(a*b)
+       print(a/b)
+       print(a//b)
+       print(a%b)
+       
+       
+      *Square root
+      
+      CODE:
+      
+      
+         def sqr(x):
+             print(x**2)
+          a=int(input())    
+          sqr(a)
+          
+          
+       *Cube root
+       
+       CODE:
+       
+       def cub(x):
+           print(x**3)
+       a=int(input())    
+       cub(a)
+       
+       *Binart equivalent of a number using recursion
+       
+       CODE:
+       
+       def convert(n):
+           if n>0:
+              convert(n//2)
+              print(n % 2,end="")
+       dec=int(input())
+       convert(dec)
+       
+       
+       *Fibonacci series
+       
+       CODE:
+       
+       def fib(x):
+          n1,n2=0,1
+          count=0
+          while count<x:
+             print(n1)
+             n3=n1+n2
+             n1=n2
+             n2=n3
+             count+=1
+       n=int(input())
+       fib(n)
 
 
-
+       
+      
+        
       
      
      
